@@ -1,5 +1,11 @@
 # Sudoku-Solver
 This code is a solution to the popular puzzle game Sudoku. The function solve() takes in a 9x9 grid representing a Sudoku puzzle and returns True if a solution exists, False otherwise. If a solution exists, the function will also modify the input grid to contain the solution.
+
+<p align="center">
+  <img src="https://github.com/Jose-M-Ramos/Sudoku-Solver/blob/main/sudoku_solver.jpg" width="800" height="400">
+</p>
+
+
 ## Requirements
 This code was written and tested in Python 3.9.5 It should work with other versions of Python 3 as well. This code requires the following Python modules:
 
