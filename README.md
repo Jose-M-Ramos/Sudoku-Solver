@@ -25,12 +25,17 @@ from sudoku import generate_sudoku_grid, solve
 # generate a random Sudoku grid
 grid = generate_sudoku_grid()
 
+#print the generated Sudoku grid
+for i in grid:
+  print(i)
+
 # solve the grid
-solve(grid)
+solution = solve_sudoku(grid)
 
 # print the solution
-for row in grid:
-    print(row)
+for row in solution:
+  print(row)
+
 
   ```
 ## Explanation
