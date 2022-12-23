@@ -20,7 +20,8 @@ Here is an example of how to use these functions to generate and solve a Sudoku 
 import itertools
 import random
 
-from sudoku import generate_sudoku_grid, solve
+from sudokugenerator import generate_sudoku_grid
+from sudokusolver import solve_sudoku
 
 # generate a random Sudoku grid
 grid = generate_sudoku_grid()
