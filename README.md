@@ -39,11 +39,11 @@ for row in solution:
 
   ```
 ## Explanation
-This code defines a function generate_sudoku_grid() that generates a 9x9 Sudoku grid with a random number of empty cells. The function first creates a 9x9 grid filled with random integers between 1 and 9 and then replaces a random number of cells with 0 to create empty cells.
+This program contains two functions that can be used to generate and solve Sudoku puzzles.
 
-The function is_valid() takes in a grid, a value, and the row and column indices of a cell in the grid, and returns True if the value is a valid choice for the cell, False otherwise. It checks if the value appears in the same row, column, or 3x3 square as the cell.
+The generate_sudoku_grid function generates a 9x9 Sudoku grid with a random number of empty cells. It uses a recursive approach to fill in the cells with random values, making sure that the values are valid according to the Sudoku rules. If a puzzle can't be generated, the function starts over with a new grid.You can also modify the generate_sudoku_grid function to generate a Sudoku grid with a specific number of empty cells by passing the desired number as an argument.
 
-The function solve() is a recursive function that tries to solve the given Sudoku puzzle. It starts by looping through each cell in the grid, and if it finds an empty cell, it tries to fill it with a value from 1 to 9. For each value, it checks if it is valid for the cell using the is_valid() function. If the value is valid, it fills the cell with the value and calls solve() recursively to try to solve the rest of the puzzle. If solve() returns True, it means that a solution was found and the function returns True. If solve() returns False, it means that the current value is not valid, so the function sets the cell back to 0 and tries the next value. If all values have been tried and none of them is valid, the function returns False. If no empty cells are found, it means that the puzzle is solved and the function returns True.
+The solve_sudoku function takes a Sudoku grid as an argument and returns the solution as a 2D list. It uses a recursive approach to find a valid value for each empty cell, making sure that the values are valid according to the Sudoku rules. If the puzzle has multiple solutions or is unsolvable, the function returns None.
 
 
 
