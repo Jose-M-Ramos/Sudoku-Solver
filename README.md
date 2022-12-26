@@ -1,5 +1,5 @@
 # Sudoku-Solver
-This code is a solution to the popular puzzle game Sudoku. The function solve() takes in a 9x9 grid representing a Sudoku puzzle and returns True if a solution exists, False otherwise. If a solution exists, the function will also modify the input grid to contain the solution.
+This code is a solution to the popular puzzle game Sudoku. The function solve_sudoku() takes in a 9x9 grid representing a Sudoku puzzle and returns the solution( it there is one), and None otherwise. 
 
 <p align="center">
   <img src="https://github.com/Jose-M-Ramos/Sudoku-Solver/blob/main/sudoku_solver.jpg" width="800" height="400">
