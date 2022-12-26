@@ -48,9 +48,6 @@ The solve_sudoku function takes a Sudoku grid as an argument and returns the sol
 
 
 
-
-Regenerate response
-
 ## Limitations
 This Sudoku solver is a basic implementation and may not be able to solve all puzzles. It uses a recursive approach to try all possible values for empty cells and backtracks when it reaches a dead end. This can be computationally expensive for very difficult puzzles.
 
